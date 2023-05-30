@@ -1,7 +1,7 @@
 import java.util.Date
 
 fun main(args: Array<String>) {
-    /*println("Hello World!")
+    println("Hello World!")
 
     // INMUTABLES (NO se reasignan "=")
     val inmutable: String = "Andrés";
@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
     println(Suma.pi)
     println(Suma.elevarAlCuadrado(2))
     println(Suma.historialSumas)
-    */
+    
     //ARREGLOS
 
     //Tipos de arreglos
