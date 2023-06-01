@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
     println(Suma.pi)
     println(Suma.elevarAlCuadrado(2))
     println(Suma.historialSumas)
-    
+
     //ARREGLOS
 
     //Tipos de arreglos
