@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         //Se añade un listener al botón ciclo de vida
         botonACicloVida.setOnClickListener {
-            irActividad(ACicloVida::class.java)
+            irActividad(AACicloVida::class.java)
         }
     }
 
