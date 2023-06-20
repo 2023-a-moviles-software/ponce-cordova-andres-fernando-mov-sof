@@ -1,0 +1,35 @@
+[ {
+  "id" : 1,
+  "nombre" : "Misa",
+  "descripcion" : "La misa",
+  "lugar" : {
+    "id" : 2,
+    "nombre" : "La casa de la abuela",
+    "direccion" : "Calle 123",
+    "latitud" : 86.0,
+    "longitud" : 123.0,
+    "capacidad" : 100,
+    "tieneEstacionamiento" : true
+  },
+  "fecha" : "2023-07-09",
+  "horaInicio" : "12:00:00",
+  "duracion" : "01:00:00",
+  "precioDeEntrada" : 20.0
+}, {
+  "id" : 2,
+  "nombre" : "Reunión",
+  "descripcion" : "Reunión victoriosa",
+  "lugar" : {
+    "id" : 1,
+    "nombre" : "Atuntaqui",
+    "direccion" : "Locazo",
+    "latitud" : 80.0,
+    "longitud" : 145.0,
+    "capacidad" : 14,
+    "tieneEstacionamiento" : false
+  },
+  "fecha" : "2023-06-20",
+  "horaInicio" : "05:00:00",
+  "duracion" : "00:30:00",
+  "precioDeEntrada" : 0.0
+} ]

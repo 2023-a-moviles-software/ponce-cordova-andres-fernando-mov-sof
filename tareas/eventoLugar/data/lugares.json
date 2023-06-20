@@ -1,0 +1,25 @@
+[ {
+  "id" : 1,
+  "nombre" : "Atuntaqui",
+  "direccion" : "Locazo",
+  "latitud" : 80.0,
+  "longitud" : 145.0,
+  "capacidad" : 14,
+  "tieneEstacionamiento" : false
+}, {
+  "id" : 2,
+  "nombre" : "La casa de la abuela",
+  "direccion" : "Calle 123",
+  "latitud" : 86.0,
+  "longitud" : 123.0,
+  "capacidad" : 100,
+  "tieneEstacionamiento" : true
+}, {
+  "id" : 3,
+  "nombre" : "Poliburguers",
+  "direccion" : "Frente a la Poli",
+  "latitud" : 86.0,
+  "longitud" : 123.0,
+  "capacidad" : 100,
+  "tieneEstacionamiento" : false
+} ]
