@@ -28,4 +28,13 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2" />
 
+    <Button
+        android:id="@+id/btn_ir_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="List View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ciclo_vida"
+        tools:layout_editor_absoluteX="151dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
