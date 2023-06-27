@@ -2,8 +2,10 @@ package com.example.movilessoftware2023a
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
@@ -19,6 +21,44 @@ class MainActivity : AppCompatActivity() {
                     //Lógica del negocio
                     val data = result.data
                     "${data?.getStringExtra("nombreModificado")}"
+                }
+            }
+        }
+
+    val callbackIntentPickUri =
+        registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult()
+        ){
+            result ->
+            if (result.resultCode === RESULT_OK){
+                if(result.data != null){
+                    if(result.data!!.data != null){
+                        val uri:Uri = result.data!!.data!!
+                        val cursor = contentResolver.query(
+                            uri,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        )
+                        cursor?.moveToFirst()
+                        val indiceTelefono = cursor?.getColumnIndex(
+                            ContactsContract.CommonDataKinds.Phone.NUMBER
+                        )
+                        val telefono = cursor?.getString(indiceTelefono!!)
+                        cursor?.close()
+                        "Teléfono: ${telefono}"
+                    }
+                    //Lógica del negocio
+                    val uri = result.data?.data
+                    val intentConRespuesta = Intent()
+                    intentConRespuesta.putExtra("uri",uri.toString())
+                    setResult(
+                        RESULT_OK,
+                        intentConRespuesta
+                    )
+                    finish()
                 }
             }
         }
@@ -43,6 +83,24 @@ class MainActivity : AppCompatActivity() {
 
         botonIrListView.setOnClickListener {
             irActividad(BListView::class.java)
+        }
+
+        val botonIntentImplicito = findViewById<Button>(
+            R.id.btn_ir_intent_implicito
+        )
+        botonIntentImplicito.setOnClickListener {
+            val intentConRespuesta = Intent(
+                Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+            )
+            callbackIntentPickUri.launch(intentConRespuesta)
+        }
+
+        val botonIntentExplicito = findViewById<Button>(
+            R.id.btn_ir_intent_explicito
+        )
+        botonIntentExplicito.setOnClickListener {
+            abrirActividadConParametros(CIntentExplicitoParametros::class.java)
         }
 
     }

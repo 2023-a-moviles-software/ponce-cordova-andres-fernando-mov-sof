@@ -1,5 +1,7 @@
 package com.example.movilessoftware2023a
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -9,6 +11,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
+
 
 class BListView : AppCompatActivity() {
 
@@ -82,5 +85,43 @@ class BListView : AppCompatActivity() {
             }
             else -> super.onContextItemSelected(item)
         }
+    }
+
+    fun abrirDialogo(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("¿Desea eliminar?")
+        builder.setPositiveButton(
+            "Aceptar",
+            DialogInterface.OnClickListener{
+                dialog, which -> //Alguna cosa
+            }
+        )
+        builder.setNegativeButton(
+            "Cancelar",
+            null
+        )
+
+        val opciones = resources.getStringArray(R.array.opciones_dialogo)
+        val seleccionPrevia = booleanArrayOf(
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        )
+
+        builder.setMultiChoiceItems(
+            opciones,
+            seleccionPrevia,
+            {
+                dialog, which, isChecked ->
+                "Dio clic en el item ${which}"
+            }
+        )
+
+        val dialogo = builder.create()
+        dialogo.show()
     }
 }
