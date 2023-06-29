@@ -80,7 +80,7 @@ class BListView : AppCompatActivity() {
                 return true
             }
             R.id.mi_eliminar -> {
-                "Hacer algo con: ${itemSeleccionado}"
+                abrirDialogo()
                 return true
             }
             else -> super.onContextItemSelected(item)

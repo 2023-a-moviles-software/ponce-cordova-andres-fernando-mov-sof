@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
         botonIntentImplicito.setOnClickListener {
             val intentConRespuesta = Intent(
                 Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+                ContactsContract.CommonDataKinds.Phone.CONTENT_URI
             )
             callbackIntentPickUri.launch(intentConRespuesta)
         }

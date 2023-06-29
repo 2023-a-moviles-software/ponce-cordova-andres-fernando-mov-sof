@@ -13,11 +13,18 @@
         android:theme="@style/Theme.MovilesSoftware2023A"
         tools:targetApi="31">
         <activity
+            android:name=".ECrudEntrenador"
+            android:exported="false" />
+        <activity
             android:name=".CIntentExplicitoParametros"
             android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".BListView"
