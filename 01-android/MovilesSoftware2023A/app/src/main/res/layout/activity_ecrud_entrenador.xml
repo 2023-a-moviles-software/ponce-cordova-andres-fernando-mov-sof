@@ -48,23 +48,23 @@
         android:id="@+id/btn_eliminar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="176dp"
+        android:layout_marginTop="48dp"
         android:text="Eliminar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_crear_bdd"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="@+id/btn_crear_bdd" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_bdd"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_bdd" />
 
     <Button
         android:id="@+id/btn_crear_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:text="Crear"
-        app:layout_constraintBottom_toTopOf="@+id/btn_eliminar_bdd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_buscar_bdd"
