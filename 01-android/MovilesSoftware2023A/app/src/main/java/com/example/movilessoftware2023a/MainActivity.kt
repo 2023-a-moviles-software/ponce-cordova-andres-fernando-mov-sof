@@ -67,6 +67,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Base de datos SQLite
+        EBaseDeDatos.tablaEntrenador = ESqliteHelperEntrenador(this)
+
         //Se crea una variable para el botón ciclo de vida
         val botonACicloVida = findViewById<Button>(
             R.id.btn_ciclo_vida
@@ -103,6 +106,19 @@ class MainActivity : AppCompatActivity() {
             abrirActividadConParametros(CIntentExplicitoParametros::class.java)
         }
 
+        val botonCrudSqlite = findViewById<Button>(
+            R.id.btn_ir_crud_sqlite
+        )
+        botonCrudSqlite.setOnClickListener {
+            irActividad(ECrudEntrenador::class.java)
+        }
+
+        val botonRecycleView = findViewById<Button>(
+            R.id.btn_ir_recycle_view
+        )
+        botonRecycleView.setOnClickListener {
+            irActividad(FRecyclerView::class.java)
+        }
     }
 
     fun irActividad(

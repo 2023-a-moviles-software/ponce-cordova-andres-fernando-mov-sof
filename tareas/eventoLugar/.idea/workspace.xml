@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e29faa3b-f23d-46e3-9940-e43cc0a932e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/app/src/main/java/com/example/movilessoftware2023a/BListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/app/src/main/java/com/example/movilessoftware2023a/BListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/MovilesSoftware2023A/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/andresponce/deber/configuracion/EstandarTiempo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/andresponce/deber/configuracion/EstandarTiempo.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +165,7 @@
       <workItem from="1687873312218" duration="282000" />
       <workItem from="1687959125205" duration="302000" />
       <workItem from="1688042926214" duration="285000" />
+      <workItem from="1688082613148" duration="163000" />
     </task>
     <servers />
   </component>

@@ -71,10 +71,10 @@ class ESqliteHelperEntrenador(
         return resultadoDelete.toInt() != -1
     }
 
-    fun consultarEntrenadorPorId(id: Int): BEntrenador?{
+    fun consultarEntrenadorPorId(id: Int): BEntrenador{
         val db = this.readableDatabase
         val scriptConsultaLectura = """
-            SELECT * FROM ENTRENADOR WHERE id=?
+            SELECT * FROM ENTRENADOR WHERE id = ?
         """.trimIndent()
 
         val parametroConsulta = arrayOf(id.toString())
