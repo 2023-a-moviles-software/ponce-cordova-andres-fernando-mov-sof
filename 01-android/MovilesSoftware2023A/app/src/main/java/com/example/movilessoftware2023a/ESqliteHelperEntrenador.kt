@@ -8,17 +8,19 @@ import android.database.sqlite.SQLiteOpenHelper
 class ESqliteHelperEntrenador(
     contexto: Context?):SQLiteOpenHelper(
                             contexto,
-                        "BDEntrenador",
+                        "Moviles",
                         null,
                         1) {
-    override fun onCreate(db: SQLiteDatabase?) {
+    override fun onCreate(db: SQLiteDatabase) {
         val scriptSQLCrearTablaEntrenador =
-            """CREATE TABLE ENTRENADOR(
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                nombre varchar(50),
-                descripcion varchar(50)
-               )
+            """
+                CREATE TABLE ENTRENADOR(
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    nombre varchar(50),
+                    descripcion varchar(50)
+                )
             """.trimIndent()
+        db.execSQL(scriptSQLCrearTablaEntrenador)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
@@ -74,7 +76,7 @@ class ESqliteHelperEntrenador(
     fun consultarEntrenadorPorId(id: Int): BEntrenador{
         val db = this.readableDatabase
         val scriptConsultaLectura = """
-            SELECT * FROM ENTRENADOR WHERE id = ?
+            SELECT * FROM ENTRENADOR WHERE ID = ?
         """.trimIndent()
 
         val parametroConsulta = arrayOf(id.toString())
@@ -87,13 +89,13 @@ class ESqliteHelperEntrenador(
         val arreglo = arrayListOf<BEntrenador>()
         if (existeUsuario){
             do {
-                val id = resultadosConsultaLectura.getInt(0)
-                val nombre = resultadosConsultaLectura.getString(1)
-                val descripcion = resultadosConsultaLectura.getString(2)
-                if (id != null){
-                    usuarioEncontrado.id = id
-                    usuarioEncontrado.nombre = nombre
-                    usuarioEncontrado.descripcion = descripcion
+                val idEncontrado = resultadosConsultaLectura.getInt(0)
+                val nombreEncontrado = resultadosConsultaLectura.getString(1)
+                val descripcionEncontrado = resultadosConsultaLectura.getString(2)
+                if (idEncontrado != null){
+                    usuarioEncontrado.id = idEncontrado
+                    usuarioEncontrado.nombre = nombreEncontrado
+                    usuarioEncontrado.descripcion = descripcionEncontrado
                 }
             }while (resultadosConsultaLectura.moveToNext())
         }
