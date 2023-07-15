@@ -1,4 +1,4 @@
-Intengrates: 
+Integrantes: 
 - Lincango Dennis
 - Ponce Andrés
 
