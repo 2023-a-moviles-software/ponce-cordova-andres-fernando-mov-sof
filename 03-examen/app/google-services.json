@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1062444572307",
+    "project_id": "examen-ib-moviles",
+    "storage_bucket": "examen-ib-moviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062444572307:android:c1bc1f5b3da85c5b74f766",
+        "android_client_info": {
+          "package_name": "com.andresponce.examen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062444572307-ein48ujr5mpi7s8ljfk9o81rgcje8s98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeDKRVPXBiG5Nk9wmg3Qq4kuLnuh7J_oo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062444572307-ein48ujr5mpi7s8ljfk9o81rgcje8s98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

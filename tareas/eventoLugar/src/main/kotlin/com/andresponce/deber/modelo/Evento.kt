@@ -1,14 +1,8 @@
 package com.andresponce.deber.modelo
 
-import com.andresponce.deber.serializadores.jackson.LocalDateDeserializador
-import com.andresponce.deber.serializadores.jackson.LocalDateSerializador
-import com.andresponce.deber.serializadores.jackson.LocalTimeDeserializador
-import com.andresponce.deber.serializadores.jackson.LocalTimeSerializador
 import com.andresponce.deber.util.Identificable
 import com.andresponce.deber.util.ValidadorDeCadenaNoVacia
 import com.andresponce.deber.util.ValidadorDePrecio
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize
-import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import java.time.LocalDate
 import java.time.LocalTime
 
@@ -33,16 +27,10 @@ class Evento(
 
     var lugar: Lugar
 
-    @JsonDeserialize(using = LocalDateDeserializador::class)
-    @JsonSerialize(using = LocalDateSerializador::class)
     var fecha: LocalDate
 
-    @JsonDeserialize(using = LocalTimeDeserializador::class)
-    @JsonSerialize(using = LocalTimeSerializador::class)
     var horaInicio: LocalTime
 
-    @JsonDeserialize(using = LocalTimeDeserializador::class)
-    @JsonSerialize(using = LocalTimeSerializador::class)
     var duracion: LocalTime
 
     var precioDeEntrada: Double = precioDeEntrada

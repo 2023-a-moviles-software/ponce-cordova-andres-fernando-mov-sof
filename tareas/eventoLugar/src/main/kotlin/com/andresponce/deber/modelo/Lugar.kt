@@ -1,6 +1,10 @@
 package com.andresponce.deber.modelo
 
-import com.andresponce.deber.util.*
+import com.andresponce.deber.util.Identificable
+import com.andresponce.deber.util.ValidadorDeCadenaNoVacia
+import com.andresponce.deber.util.ValidadorDeLatitud
+import com.andresponce.deber.util.ValidadorDeLongitud
+import com.andresponce.deber.util.ValidadorNumeroPositivo
 import java.math.BigDecimal
 
 class Lugar(
