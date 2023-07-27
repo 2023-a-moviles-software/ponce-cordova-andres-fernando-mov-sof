@@ -90,4 +90,12 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <Button
+        android:id="@+id/btn_intent_firebase_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AuthUI"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="514dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
