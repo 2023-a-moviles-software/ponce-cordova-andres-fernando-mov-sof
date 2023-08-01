@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Deber02" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:colorForeground">@color/primary_text</item>
+    </style>
+
+    <style name="Theme.Deber02" parent="Base.Theme.Deber02" />
+</resources>
