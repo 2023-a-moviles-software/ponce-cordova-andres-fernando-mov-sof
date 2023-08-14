@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Deber 03</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="lugares">Lugares</string>
+    <string name="eventos">Eventos</string>
+    <string name="ir_eventos">Ver eventos</string>
+    <string name="guardar">Guardar</string>
+    <string name="mas_opciones">Más opciones</string>
+    <string name="etiqueta_nombre">Nombre</string>
+    <string name="etiqueta_direccion">Dirección</string>
+    <string name="etiqueta_estacionamiento">Estacionamiento</string>
+    <string name="pregunta_estacionamiento">¿Tiene estacionamiento?</string>
+    <string name="etiqueta_capacidad">Capacidad</string>
+    <string name="etiqueta_descripcion">Descripción</string>
+    <string name="descripcion_vacia">No hay descripción disponible.</string>
+    <string name="etiqueta_fecha">Fecha</string>
+    <string name="etiqueta_precio_entrada">Precio</string>
+    <string name="nuevo_evento">Nuevo evento</string>
+    <string name="modificando_evento">Editando evento</string>
+    <string name="etiqueta_hora_inicio">Hora de inicio</string>
+    <string name="etiqueta_hora_fin">Hora de fin</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="nuevo_lugar">Nuevo lugar</string>
+    <string name="modificando_lugar">Editando lugar</string>
+    <string name="llenado_datos">Por favor, completa todos los datos solicitados:</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="titulo_eliminar">¿Deseas proceder con la eliminación de \"</string>
+    <string name="fin_pregunta">\"?</string>
+    <string name="mensaje_eliminar">Este elemento va a eliminarse permanentemente. Esta acción no se puede deshacer</string>
+    <string name="eliminar_exito">se ha eliminado correctamente.</string>
+    <string name="registro_exito">ha sido registrado correctamente.</string>
+    <string name="edicion_exito">se ha editado correctamente.</string>
+    <string name="error">Ha ocurrido un error: %s</string>
+    <string name="capacidad_no_numero">La capacidad debe ser un número</string>
+    <string name="precio_no_numero">El precio debe ser un número</string>
+    <string name="id_perdido">Identifier not retrieved.</string>
+    <string name="no_encontrado">The specified %s was not found.</string>
+    <string name="lugar">lugar</string>
+    <string name="evento">evento</string>
+    <string name="retroceder">Retroceder</string>
+    <string name="eventos_en">Eventos en %s:</string>
+    <string name="seleccione_ubicacion">Selecciona la ubicación</string>
+</resources>
