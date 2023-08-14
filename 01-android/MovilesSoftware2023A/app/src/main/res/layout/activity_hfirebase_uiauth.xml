@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".HFirebaseUIAuth">
 
+    <TextView
+        android:id="@+id/tv_bienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:gravity="center"
+        android:text="Bienvenido" />
+
     <Button
         android:id="@+id/btn_login_firebase"
         android:layout_width="wrap_content"
@@ -20,4 +28,5 @@
         android:layout_height="wrap_content"
         android:text="Logout"
         android:visibility="gone" />
+
 </LinearLayout>

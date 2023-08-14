@@ -66,5 +66,6 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
     // Firestore
     implementation 'com.google.firebase:firebase-firestore-ktx'
-
+    // Auth
+    implementation 'com.google.android.gms:play-services-auth:20.0.1'
 }
