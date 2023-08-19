@@ -6,6 +6,8 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.andresponce.deber03.R
+import com.andresponce.deber03.configuracion.ConstantesPrecision
 import com.mapbox.geojson.Point
 import com.mapbox.maps.CameraOptions
 import com.mapbox.maps.MapView
@@ -15,14 +17,12 @@ import com.mapbox.maps.plugin.annotation.AnnotationPlugin
 import com.mapbox.maps.plugin.annotation.annotations
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotationManager
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotationOptions
-import com.andresponce.deber03.R
-import com.andresponce.deber03.configuracion.ConstantesPrecision
 import com.mapbox.maps.plugin.annotation.generated.createPointAnnotationManager
 import com.mapbox.maps.plugin.gestures.addOnMapClickListener
 import java.math.BigDecimal
 import java.math.RoundingMode
 
-class ManejadorDeMapa (
+class ManejadorDeMapa(
     private val context: AppCompatActivity,
     private val mapView: MapView,
     private val textView: TextView

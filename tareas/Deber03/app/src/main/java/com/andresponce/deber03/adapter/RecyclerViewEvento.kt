@@ -9,8 +9,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.andresponce.deber03.R
 import com.andresponce.deber03.activity.EventosActivity
+import com.andresponce.deber03.configuracion.ConstantesPrecision
 import com.andresponce.deber03.configuracion.EstandarTiempo
 import com.andresponce.deber03.modelo.Evento
+import java.math.RoundingMode
 
 class RecyclerViewEvento(
     private val contexto: EventosActivity,
@@ -70,7 +72,12 @@ class RecyclerViewEvento(
         holder.nombreTextView.text = eventoEncontrado.nombre
         holder.descripcionTextView.text = eventoEncontrado.descripcion
         holder.fechaTextView.text = eventoEncontrado.fecha.format(EstandarTiempo.FORMATO_FECHA)
-        holder.precioTextView.text = "$ ${eventoEncontrado.precioDeEntrada.toPlainString()}"
+        holder.precioTextView.text = "$ ${
+            eventoEncontrado.precioDeEntrada.setScale(
+                ConstantesPrecision.PRECISION_DINERO,
+                RoundingMode.CEILING
+            )
+        }"
         holder.horaInicioTextView.text =
             eventoEncontrado.horaInicio.format(EstandarTiempo.FORMATO_HORA)
         holder.horaFinTextView.text = eventoEncontrado.horaFin.format(EstandarTiempo.FORMATO_HORA)

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.andresponce.deber03.R
 import com.andresponce.deber03.adapter.RecyclerViewLugar
 import com.andresponce.deber03.dao.DaoFactory
+import com.andresponce.deber03.datos.BaseDatosHelper
 import com.andresponce.deber03.util.Claves
 import com.andresponce.deber03.util.NavegarActividades
 import java.io.Serializable
@@ -31,6 +32,7 @@ class LugaresActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        BaseDatosHelper.baseDeDatos = BaseDatosHelper(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lugares)
 

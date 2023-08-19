@@ -61,8 +61,12 @@ class CrearLugarActivity : AppCompatActivity() {
                     direccion = direccionField.text.toString(),
                     capacidad = capacidadField.text.toString().toInt(),
                     tieneEstacionamiento = tieneEstacionamientoSwitch.isChecked,
-                    latitud = BigDecimal(latitudLongitudTextView.text.toString().split(",")[0].trim()),
-                    longitud = BigDecimal(latitudLongitudTextView.text.toString().split(",")[1].trim())
+                    latitud = BigDecimal(
+                        latitudLongitudTextView.text.toString().split(",")[0].trim()
+                    ),
+                    longitud = BigDecimal(
+                        latitudLongitudTextView.text.toString().split(",")[1].trim()
+                    )
                 )
             } catch (e: Exception) {
                 Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
