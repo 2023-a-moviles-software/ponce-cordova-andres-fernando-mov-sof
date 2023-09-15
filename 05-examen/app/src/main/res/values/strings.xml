@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">IIB Exam</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiYW5kcmVzbG9sNjQiLCJhIjoiY2xrNTVucTltMTBhNTNzbXN3bzE4cTZmYiJ9.4yomDevneT2DLmNOc-ntLA</string>
+    <string name="nuevo">New</string>
+    <string name="lugares">Places</string>
+    <string name="eventos">Events</string>
+    <string name="ir_eventos">Go to events</string>
+    <string name="guardar">Save</string>
+    <string name="mas_opciones">More options</string>
+    <string name="etiqueta_nombre">Name</string>
+    <string name="etiqueta_direccion">Address</string>
+    <string name="etiqueta_estacionamiento">Parking</string>
+    <string name="pregunta_estacionamiento">Has parking?</string>
+    <string name="etiqueta_capacidad">Capacity</string>
+    <string name="etiqueta_descripcion">Description</string>
+    <string name="descripcion_vacia">No description available.</string>
+    <string name="etiqueta_hora_inicio">Start time</string>
+    <string name="etiqueta_hora_fin">End time</string>
+    <string name="etiqueta_fecha">Date</string>
+    <string name="etiqueta_precio_entrada">Price</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="nuevo_lugar">New place</string>
+    <string name="modificando_lugar">Editing place</string>
+    <string name="nuevo_evento">New event</string>
+    <string name="modificando_evento">Editing event</string>
+    <string name="llenado_datos">Please, complete the required fields</string>
+    <string name="editar">Edit</string>
+    <string name="borrar">Delete</string>
+    <string name="titulo_eliminar">Are you sure you want to delete \"</string>
+    <string name="fin_pregunta">\"?</string>
+    <string name="mensaje_eliminar">This item will be deleted permanently. You can\'t undo this action.</string>
+    <string name="eliminar_exito">has been deleted successfully.</string>
+    <string name="registro_exito">has been registered successfully.</string>
+    <string name="edicion_exito">has been edited successfully.</string>
+    <string name="error">An error has occurred: %s</string>
+    <string name="capacidad_no_numero">The capacity must be a number</string>
+    <string name="precio_no_numero">The price must be a number</string>
+    <string name="id_perdido"></string>
+    <string name="no_encontrado"></string>
+    <string name="lugar">place</string>
+    <string name="evento">event</string>
+    <string name="retroceder">Back</string>
+    <string name="eventos_en">Events in %s:</string>
+    <string name="seleccione_ubicacion">Select the location</string>
+</resources>
